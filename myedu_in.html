@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My personal Information</title>
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      div {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }    
+        table{
+           float: center;
+           margin: 5%;
+           font-family:'Times New Roman', Times, serif ;
+           font-size: 23px;
+        }
+       h1{
+        border: 5px solid #fee1dd ;
+           width: 60%;
+           height: 10%;
+           padding: 5px;
+           margin: 5px;
+           background-color:#9db0ce;
+       }
+       
+       
+       
+         
+         </style>
+</head>
+  <body>
+    
+    <nav class="navbar bg-primary navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <nav class="navbar bg-body-tertiary bg-primary">
+            <div class="container-fluid ">
+              <a class="navbar-brand " href="#" style="color: rgb(134, 154, 192);">
+    
+                INTRODUCTION
+              </a>
+            </div>
+          </nav>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" aria-disabled="true" href="index.html">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="intro_page.html">My Personal Information</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="myedu_frontpage.html">Educational Information</a></li>
+                 
+                  
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contect_us.html">Contect Us</a>
+              </li>
+            </ul>
+    
+    
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <center><h1 id="myintro"></h1></center>
+<table class="table table-hover container-fluid">
+        
+          
+        <tbody>
+            <tr>
+                <th style="color: #355070;">Name :</th>
+                <td>Yash Kamleshkumar Bhavsar</td>
+                
+              </tr>
+            
+          <tr>
+            <th style="color: #355070;">Enrollment :</th>
+            <td>226240307005</td>
+            
+          </tr>
+          <tr>
+            <th style="color: #355070;">Collage :</th>
+            <td>Government Polytechnic Himatnagar-624</td>
+           
+          </tr>
+          <tr >
+            <th style="color: #355070;">University :</th>
+            <td colspan="2">Gujarat Technological University<a href="https://www.gtu.ac.in/ " target="_blank" style="color: cornflowerblue;">(GTU)</a></td>
+           
+          </tr>
+          <tr>
+            <th style="color: #355070;">State :</th>
+            <td colspan="2">Gujarat</td>
+           
+          </tr>
+          <tr >
+            <th style="color: #355070;">Country :</th>
+            <td colspan="2">India</td>
+           
+          </tr>
+          <tr >
+            <th style="color: #355070;">Code :</th>
+            <td colspan="2">624</td>
+           
+          </tr>
+          <tr>
+            <th style="color: #355070;">Address :</th>
+            <td colspan="2"><a href="https://goo.gl/maps/spY2r4Zv3LijhAet8" target="_blank" class="nav-link p-0 ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                </svg>
+                &nbsp;Motipura Circle, N. H. No. 8, Nr. Sc. College, Himatnagar - 383001, Dist.
+                Sabarkantha Himatnagar
+            
+            </svg>
+          </tr>
+          
+        </tbody>
+      </table> 
+      
+      <script>
+        var i = 0;
+var txt="MY EDUCATIONAL INFORMATION"
+var speed = 40;
+
+function typeWriter() {
+ if (i < txt.length) {
+   document.getElementById("myintro").innerHTML += txt.charAt(i);
+   i++;
+   setTimeout(typeWriter, speed);
+ }
+}
+typeWriter();
+
+
+
+     </script>
+    <script src="bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

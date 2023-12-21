@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MY INTRODUCTION</title>
+  <link href="bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    div {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+
+    figure {
+      height: 45%;
+      width: 45%;
+    }
+
+
+    img {
+      height: 45%;
+      width: 45%;
+    }
+
+    body {
+      background-color: #355070;
+
+    }
+
+  
+    .white-mode {
+      background-color: white;
+    }
+
+    .dark-mode {
+      background-color: black;
+    }
+
+    .original-mode {
+      background-color: #355070;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar bg-primary navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary bg-primary">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="#" style="color: rgb(134, 154, 192);">
+
+            INTRODUCTION
+          </a>
+        </div>
+      </nav>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" aria-disabled="true">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="intro_page.html">My Personal Information</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="myedu_frontpage.html">Educational Information</a></li>
+              
+     
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Day/Night Mode
+            </a>
+            <ul class="dropdown-menu">
+              <button onclick="day()" class="dropdown-item">day </button>
+              <button onclick="night()" class="dropdown-item">night</button>
+              <button onclick="original()" class="dropdown-item">original</button>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contect_us.html">Contect Us</a>
+          </li>
+        </ul>
+
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <center>
+    <hr style="color:dodgerblue; width: 400px;" class="border border-primary border-3 opacity-75">
+  </center>
+  <center>
+    <figure class="figure">
+      <div style="width: 45%; height: 45%;" id="carouselExampleAutoplaying" class="carousel slide"
+        data-bs-ride="carousel">
+        <div class="carousel-inner" style="background-color: whitesmoke;">
+          <div class="carousel-item active">
+            <img src="person_logo.png" class=" rounded mx-auto w-100" alt="person_1">
+          </div>
+
+          <div class="carousel-item ">
+            <img style="height: 273px;" src="person2_logo.png" l class=" rounded mx-auto  w-100" alt="person_2">
+          </div>
+          <div class="carousel-item">
+            <img src="person3_logo.png"style="width: 45%; height: 45%;" class="rounded mx-auto w-100" alt="person_3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </figure>
+
+
+  </center>
+  <center>
+    <hr style="color:#355070; width: 400px;" class="border border-primary border-3 opacity-75">
+    <center style="color:#CEA0AA;">
+      <h1 style="font-size:50px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="Welcome" ></h1>
+    </center><br>
+
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample">
+      <b
+        style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">
+        login/sign up</b>
+    </a>
+  </center>
+  <center>
+    <hr style="color:#355070; width: 400px;">
+  </center>
+  <aside>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">LOGIN/SIGN UP</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+     <div class="offcanvas-body" >
+        <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >
+          <b> Hello everyone, Welcome to my Website if you have any query you can contect me after login if you are new
+            then you must sign up your self and then contect me Thank you. </b>
+        </div>
+        <div class="dropdown mt-3">
+          <button class="dropdown-toggle btn btn-outline-info " type="button" data-bs-toggle="dropdown">
+            Dropdown button
+          </button>
+          
+          <ul class="dropdown-menu" style="border: 4px solid #355070 ;">
+            <li><a class="dropdown-item" href="login.html">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">login</h5>
+              </a></li>
+            <li><a class="dropdown-item" href="signup.html">
+                <h5 style="font-family: 'Times New Roman', Times, serif;">sign up</h5>
+               
+              </a></li>
+              
+
+          </ul>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </aside><br><br>
+  
+<footer class="bg-dark p-2 text-center">
+  <div class="container">
+    <p class="text-white">All Right Reserved By @YASH BHAVSAR💡</p>
+  </div>
+</footer>
+
+
+  <script>
+
+    var i = 0;
+    var txt = "welcome! to my Website....."
+    var speed = 50;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("Welcome").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+
+    }
+    typeWriter();
+    function day() {
+
+      var a = document.body;
+      a.classList.toggle("white-mode");
+    }
+    function night() {
+
+      var b = document.body;
+      b.classList.toggle("dark-mode");
+    }
+    function original() {
+
+      var c = document.body;
+      c.classList.toggle("original-mode");
+    }
+
+
+  </script>
+  <script src="bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
